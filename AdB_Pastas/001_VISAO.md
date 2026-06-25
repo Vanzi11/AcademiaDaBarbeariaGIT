@@ -18,6 +18,7 @@ Toda nova iniciativa deverá contribuir para aproximar a Academia dessa Visão.
 
 # Nossa Visão
 
+
 Ser a principal referência brasileira em conhecimento, tecnologia e inteligência para barbeiros e empresários do setor, ajudando profissionais a tomar melhores decisões, desenvolver seus negócios e contribuir continuamente para elevar a qualidade da barbearia brasileira, valorizando a diversidade regional, cultural e técnica que torna a profissão única em cada região do país.
 
 Queremos construir um ecossistema onde aprender, evoluir e inovar façam parte da rotina de todo barbeiro.

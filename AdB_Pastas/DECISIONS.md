@@ -2,7 +2,7 @@
 
 Projeto: Academia da Barbearia
 
-Versão da Arquitetura: 1.0
+Versão da Arquitetura: 1.4
 
 ---
 
@@ -225,6 +225,128 @@ GitHub passa a ser a Fonte Oficial do Projeto (Single Source of Truth).
 **Motivo**
 
 Centralizar toda a documentação, permitir acesso de qualquer lugar, manter histórico de versões e facilitar futuras integrações com ferramentas de desenvolvimento.
+
+---
+
+# DECISÃO 015
+
+**Status:** ✅ Aprovada
+
+**Título**
+
+A Academia da Barbearia passa a trabalhar com dois horizontes estratégicos simultâneos.
+
+**Horizonte 1**
+
+Construção do patrimônio intelectual da empresa.
+
+**Horizonte 2**
+
+Construção do MVP comercial para validação do mercado em até 30 dias.
+
+**Motivo**
+
+Garantir equilíbrio entre visão de longo prazo e geração rápida de receita.
+
+---
+
+# DECISÃO 016
+
+**Status:** ✅ Aprovada
+
+**Título**
+
+O Framework de Desenvolvimento Profissional da Academia da Barbearia (FDP-AB) passa a ser o principal patrimônio intelectual da empresa.
+
+**Motivo**
+
+Todos os produtos, serviços, ferramentas, diagnósticos, certificações e a IA utilizarão o Framework como referência metodológica.
+
+---
+
+# DECISÃO 017
+
+**Status:** ✅ Aprovada
+
+**Título**
+
+O Framework FDP-AB utilizará como base científica o modelo CHA adaptado à realidade da profissão de barbeiro.
+
+**Fundamentação**
+
+* Conhecimentos
+* Habilidades
+* Atitudes
+
+Adaptados à Classificação Brasileira de Ocupações (CBO) e à literatura sobre competências profissionais.
+
+**Motivo**
+
+Construir um modelo metodológico consistente, observável e evolutivo.
+
+---
+
+# DECISÃO 018
+
+**Status:** ✅ Aprovada
+
+**Título**
+
+As Competências Digitais serão tratadas como competências transversais.
+
+**Motivo**
+
+O digital atravessa Conhecimentos, Habilidades e Atitudes, não constituindo uma quarta dimensão independente do Framework.
+
+---
+
+# DECISÃO 019
+
+**Status:** ✅ Aprovada
+
+**Título**
+
+A sequência metodológica do Framework FDP-AB será construída na seguinte ordem:
+
+1. Metodologia
+2. Matriz CHA Adaptada
+3. Escalas
+4. Instrumentos
+5. Diagnóstico
+6. Trilhas de Desenvolvimento
+7. Validação
+
+**Motivo**
+
+O diagnóstico somente pode existir após a definição da matriz de competências e dos instrumentos de avaliação.
+
+Essa sequência segue princípios utilizados em modelos de competências e avaliação profissional.
+
+---
+
+# DECISÃO 020
+
+**Status:** ✅ Aprovada
+
+**Título**
+
+O MVP comercial passa a ser prioridade operacional da Academia da Barbearia.
+
+**Objetivo**
+
+Disponibilizar os primeiros produtos digitais em até 30 dias para validação do mercado.
+
+**Produtos previstos**
+
+* Ebook Identidade Visual da Barbearia.
+* Ebook Guia do Bom Atendimento.
+* Templates para Instagram.
+* Landing Pages.
+* Site institucional.
+
+**Motivo**
+
+A Academia aprenderá mais rapidamente com clientes reais do que apenas com planejamento interno.
 
 ---
 

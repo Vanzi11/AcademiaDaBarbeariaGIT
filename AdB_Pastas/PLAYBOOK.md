@@ -223,7 +223,9 @@ Qualidade antes da velocidade.
 Conhecimento antes da tecnologia.
 
 ---
-
+# Regra — Uso Inteligente de IA
+A Academia da Barbearia utilizará múltiplas Inteligências Artificiais de forma complementar. Cada ferramenta será utilizada de acordo com sua especialidade, buscando maximizar qualidade, eficiência e escalabilidade. A arquitetura, metodologia e revisão final permanecerão centralizadas para garantir consistência em todo o ecossistema.
+---
 # Encerramento
 
 Este documento representa a forma oficial de trabalho da Academia da Barbearia.

@@ -2,7 +2,7 @@
 
 Projeto: Academia da Barbearia
 
-Versão da Arquitetura: 1.0
+Versão da Arquitetura: 1.4
 
 ---
 
@@ -88,9 +88,9 @@ Implantação do processo oficial de:
 
 ### Organização
 
-Separação oficial da documentação em duas categorias:
+Separação oficial da documentação em duas categorias.
 
-Documentação Estrutural
+#### Documentação Estrutural
 
 * README
 * PLAYBOOK
@@ -100,7 +100,7 @@ Documentação Estrutural
 * Produtos
 * Roadmap
 
-Documentação Viva
+#### Documentação Viva
 
 * MASTER
 * CHANGELOG
@@ -126,7 +126,7 @@ Documentação Viva
 
 Alternativa aprovada:
 
-Comentários moderados nos artigos.
+* Comentários moderados nos artigos.
 
 ---
 
@@ -136,9 +136,94 @@ A Academia da Barbearia passou a ser definida como uma Central de Conhecimento p
 
 ---
 
+## v1.0.2
+
+Data: 25/06/2026
+
+### Documentação Estratégica
+
+Conclusão dos documentos institucionais:
+
+* 000_INDEX.md
+* 001_VISAO.md
+* 001A_FILOSOFIA.md
+* 002_MANIFESTO.md
+* 003_MISSAO.md
+
+---
+
+### Arquitetura
+
+Atualização oficial da arquitetura para a versão 1.4.
+
+Principais alterações:
+
+* Inclusão do documento 001A_FILOSOFIA.md.
+* Inclusão do Framework de Desenvolvimento Profissional da Academia da Barbearia (FDP-AB) como núcleo metodológico da empresa.
+* Reorganização da documentação estratégica.
+* Criação da estratégia de desenvolvimento baseada em dois horizontes:
+
+  * Longo prazo: patrimônio intelectual.
+  * Curto prazo: MVP comercial.
+
+---
+
+### Framework FDP-AB
+
+Início da definição conceitual do Framework.
+
+Estrutura aprovada:
+
+* Metodologia.
+* Matriz CHA Adaptada.
+* Escalas.
+* Instrumentos.
+* Diagnóstico.
+* Trilhas de Desenvolvimento.
+* Validação.
+
+---
+
+### Modelo de Competências
+
+A estrutura inicial baseada em Jornada Linear foi substituída por um modelo fundamentado em competências multidimensionais.
+
+O Framework passa a utilizar:
+
+* Conhecimentos.
+* Habilidades.
+* Atitudes.
+
+Adaptados à realidade da profissão de barbeiro.
+
+---
+
+### Competências Digitais
+
+Definido que Competências Digitais serão tratadas como competências transversais, integradas ao modelo CHA, e não como uma dimensão independente.
+
+---
+
+### Estratégia Comercial
+
+Definição oficial da meta de lançamento do MVP da Academia da Barbearia.
+
+Objetivo:
+
+Realizar as primeiras vendas em até 30 dias.
+
+Produtos previstos para o MVP:
+
+* Ebook Identidade Visual da Barbearia.
+* Ebook Guia do Bom Atendimento.
+* Templates para Instagram.
+* Landing Pages.
+* Site institucional.
+
+---
+
 ## Próxima versão
 
-v1.0.2
+v1.0.3
 
-Será criada após a conclusão da Camada Estratégica.
-
+Será criada após a conclusão do planejamento do MVP 30 Dias e o início da construção dos primeiros produtos digitais.

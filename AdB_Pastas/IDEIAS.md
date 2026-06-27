@@ -2,7 +2,7 @@
 
 Projeto: Academia da Barbearia
 
-Versão da Arquitetura: 1.0
+Versão da Arquitetura: 1.4
 
 ---
 
@@ -173,6 +173,78 @@ Simular cenários de crescimento, contratação de barbeiros, aumento de cadeira
 Valor estratégico:
 
 Apoiar decisões de expansão e gerar inteligência de mercado.
+
+---
+
+## IDEA 008
+
+Título:
+
+Framework de Desenvolvimento Profissional da Academia da Barbearia (FDP-AB)
+
+Status:
+
+🟢 Aprovada
+
+Objetivo:
+
+Criar um Framework próprio para organizar, avaliar e desenvolver as competências profissionais do barbeiro brasileiro.
+
+Valor estratégico:
+
+Tornar-se o principal patrimônio intelectual da Academia da Barbearia e servir de base para todos os produtos, serviços, IA, diagnósticos, trilhas de aprendizagem e futuras certificações.
+
+Quando desenvolver:
+
+Início imediato, evoluindo continuamente ao longo do projeto.
+
+---
+
+## IDEA 009
+
+Título:
+
+Diagnóstico de Evolução Profissional
+
+Status:
+
+🟢 Aprovada
+
+Objetivo:
+
+Criar um instrumento de autoavaliação baseado no Framework FDP-AB para identificar competências, pontos fortes, oportunidades de desenvolvimento e recomendar trilhas personalizadas.
+
+Valor estratégico:
+
+Personalizar a experiência do usuário, orientar o desenvolvimento profissional e gerar inteligência de mercado de forma ética e anonimizada.
+
+Quando desenvolver:
+
+Após a definição da Matriz CHA, Escalas e Instrumentos do Framework.
+
+---
+
+## IDEA 010
+
+Título:
+
+Mapa Nacional de Competências da Barbearia Brasileira
+
+Status:
+
+🔵 Em Pesquisa
+
+Objetivo:
+
+Gerar indicadores agregados e anônimos sobre o nível de desenvolvimento dos barbeiros brasileiros a partir dos diagnósticos realizados na plataforma.
+
+Valor estratégico:
+
+Produzir inteligência de mercado inédita para o setor, apoiar pesquisas, orientar novos produtos da Academia e fortalecer sua autoridade nacional.
+
+Quando desenvolver:
+
+Após validação do Diagnóstico de Evolução Profissional.
 
 ---
 

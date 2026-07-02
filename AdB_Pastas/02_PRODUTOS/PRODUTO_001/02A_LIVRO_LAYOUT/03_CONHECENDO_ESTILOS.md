@@ -108,6 +108,10 @@ Uma construída sobre identidade permanece coerente — porque o estilo escolhid
 
 ---
 
+[IMAGEM: 3.1 — Barbearia de bairro imitando estética hipster sem adaptação ao contexto local]
+
+---
+
 ### Como o estilo nasce da identidade
 
 Pense no estilo de uma barbearia como a roupa que ela veste todos os dias.
@@ -470,6 +474,8 @@ Cuidado: a diferença entre identidade regional autêntica e caricatura está na
 
 Use esta tabela para comparar estilos antes de aplicar a Ferramenta 02.
 
+[IMAGEM: 3.2 — Infográfico comparativo dos principais estilos de barbearia com ícones]
+
 | Estilo | O que comunica | Arquétipos com maior afinidade | Nível de investimento | Exigência de manutenção |
 |---|---|---|---|---|
 | Clássica | Tradição, confiança | Sábio, Governante, Cara Comum | Médio | Média |
@@ -509,10 +515,19 @@ Ela cruza os quatro critérios de escolha com os estilos candidatos — e produz
 
 ---
 
-**3.4 — Ferramenta 02: Matriz de Decisão de Estilo (linha ~494)**
-Tipo: Infográfico
-Propósito: apoio visual pra ferramenta de decisão — matriz 2x2 ou de critérios.
-Prompt: "Minimalist vector diagram, ivory background #F5F2ED, charcoal black #1A1A1A grid lines and text, earthy gold #B8935A accent on axis labels, simple 2x2 decision matrix template, Portuguese axis labels placeholder, flat editorial design, no gradients, no icons clutter."
+[IMAGEM: 3.4 — Diagrama da Matriz de Decisão de Estilo (template visual)]
+
+---
+
+**FERRAMENTA 02 — MATRIZ DE DECISÃO DE ESTILO**
+
+| | Coerência com arquétipo | Reconhecimento pelo público | Sustentabilidade operacional | Viabilidade financeira | **Total** |
+|---|---|---|---|---|---|
+| Estilo A: ___________ | | | | | |
+| Estilo B: ___________ | | | | | |
+| Estilo C: ___________ | | | | | |
+
+---
 
 O estilo com maior pontuação não é automaticamente o escolhido.
 
@@ -644,6 +659,12 @@ A barbearia de Camila não é a mais impressionante visualmente do bairro.
 É a mais lembrada.
 
 Os clientes descrevem o espaço com palavras que ela nunca usou na comunicação: "tranquilo", "acolhedor", "parece que me conhecem". Essas palavras são exatamente o que o estilo foi construído para comunicar.
+
+---
+
+[IMAGEM: 3.3 — Barbearia estilo Lounge bem aplicado, coerente e modesto]
+
+---
 
 **O aprendizado**
 

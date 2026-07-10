@@ -1,0 +1,136 @@
+/*
+ * Tokens do Design System — Academia da Barbearia
+ * Fonte da verdade: 06_PORTAL/PORTAL_DESIGN_SYSTEM.md
+ * Não redefinir valores fora deste arquivo — todo componente consome estas variáveis.
+ */
+
+:root {
+  /* 1.1 Cores de marca */
+  --ab-preto-carvao: #1A1A1A;
+  --ab-branco-marfim: #F5F2ED;
+  --ab-dourado-terroso: #B8935A;
+  --ab-dourado-terroso-soft: #C7A876;
+  --ab-verde-quadro-negro: #2D4A3E;
+  --ab-verde-quadro-negro-2: #25392F;
+  --ab-verde-quadro-negro-border: #3D5F50;
+
+  /* 1.2 Escala neutra */
+  --ab-neutro-900: #1A1A1A;
+  --ab-neutro-700: #3D3B38;
+  --ab-neutro-500: #6B6863;
+  --ab-neutro-300: #A6A29A;
+  --ab-neutro-200: #D8D3C9;
+  --ab-neutro-100: #EAE6DE;
+  --ab-neutro-50:  #F5F2ED;
+
+  /* 1.3 Cores semânticas */
+  --ab-sucesso: #3D6B4F;
+  --ab-atencao: var(--ab-dourado-terroso);
+  --ab-erro:    #8B3A3A;
+  --ab-info:    #3D5A66;
+
+  /* Papéis semânticos (modo claro por padrão) */
+  --cor-fundo-pagina: var(--ab-branco-marfim);
+  --cor-texto-principal: var(--ab-preto-carvao);
+  --cor-texto-secundario: var(--ab-neutro-700);
+  --cor-texto-terciario: var(--ab-neutro-500);
+  --cor-fundo-card: var(--ab-neutro-100);
+  --cor-borda: var(--ab-neutro-200);
+  --cor-acento: var(--ab-dourado-terroso);
+
+  /* 2.1 Famílias tipográficas — fallback de sistema obrigatório */
+  --fonte-titulos: "DM Serif Display", Georgia, serif;
+  --fonte-texto: "DM Sans", -apple-system, "Segoe UI", Arial, sans-serif;
+
+  /* 2.2 Escala tipográfica — mobile (ajustada por breakpoint em base.css) */
+  --tipo-display: 2.25rem;
+  --tipo-h1: 1.875rem;
+  --tipo-h2: 1.5rem;
+  --tipo-h3: 1.25rem;
+  --tipo-h4: 1.125rem;
+  --tipo-corpo-grande: 1.125rem;
+  --tipo-corpo: 1rem;
+  --tipo-legenda: 0.875rem;
+  --tipo-micro: 0.75rem;
+
+  /* 3.3 Sistema de espaçamento (escala de 8pt) */
+  --espaco-1: 4px;
+  --espaco-2: 8px;
+  --espaco-3: 16px;
+  --espaco-4: 24px;
+  --espaco-5: 32px;
+  --espaco-6: 48px;
+  --espaco-7: 64px;
+  --espaco-8: 96px;
+  --espaco-9: 128px;
+
+  /* 3.1 Breakpoints (referência — usados em media queries, não como var direta) */
+  --largura-conteudo-max: 1200px;
+
+  /* 3.2 Grid */
+  --gutter-desktop: 24px;
+  --gutter-mobile: 16px;
+
+  /* 4.1 Botões / 4.2 Cards — raio (Versão C aprovada no protótipo) */
+  --raio: 8px;
+  --raio-pequeno: 6px;
+  --raio-pill-proibido: 0; /* nunca usar pill — ver Design System Seção 8 */
+
+  /* Sombra sutil de card — nunca dramática */
+  --sombra-card: 0 1px 3px rgba(26, 26, 26, 0.06);
+  --sombra-card-hover: 0 10px 26px rgba(26, 26, 26, 0.14);
+
+  /* 6. Animação e Movimento */
+  --duracao-transicao: 150ms;
+  --easing-entrada: ease-out;
+  --easing-saida: ease-in;
+}
+
+/* 1.6 Modo Escuro — segue prefers-color-scheme por padrão, alternável via [data-tema] no <html> */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema="claro"]) {
+    --cor-fundo-pagina: var(--ab-verde-quadro-negro);
+    --cor-texto-principal: var(--ab-branco-marfim);
+    --cor-texto-secundario: rgba(245, 242, 237, 0.75);
+    --cor-fundo-card: var(--ab-preto-carvao);
+    --cor-borda: var(--ab-verde-quadro-negro-border);
+    --cor-acento: var(--ab-dourado-terroso);
+  }
+}
+
+:root[data-tema="escuro"] {
+  --cor-fundo-pagina: var(--ab-verde-quadro-negro);
+  --cor-texto-principal: var(--ab-branco-marfim);
+  --cor-texto-secundario: rgba(245, 242, 237, 0.75);
+  --cor-fundo-card: var(--ab-preto-carvao);
+  --cor-borda: var(--ab-verde-quadro-negro-border);
+  --cor-acento: var(--ab-dourado-terroso);
+}
+
+:root[data-tema="claro"] {
+  --cor-fundo-pagina: var(--ab-branco-marfim);
+  --cor-texto-principal: var(--ab-preto-carvao);
+  --cor-texto-secundario: var(--ab-neutro-700);
+  --cor-fundo-card: var(--ab-neutro-100);
+  --cor-borda: var(--ab-neutro-200);
+  --cor-acento: var(--ab-dourado-terroso);
+}
+
+/* Escala tipográfica fluida — desktop (tablet e acima, PORTAL_DESIGN_SYSTEM.md 2.2) */
+@media (min-width: 768px) {
+  :root {
+    --tipo-display: 4rem;
+    --tipo-h1: 3rem;
+    --tipo-h2: 2.25rem;
+    --tipo-h3: 1.5rem;
+    --tipo-h4: 1.25rem;
+    --tipo-corpo-grande: 1.25rem;
+    --tipo-corpo: 1.0625rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duracao-transicao: 0ms;
+  }
+}

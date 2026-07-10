@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "static-exports",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["http-server", ".exports", "-p", "8099", "-a", "localhost", "-c-1"],
+      "port": 8099
+    }
+  ]
+}

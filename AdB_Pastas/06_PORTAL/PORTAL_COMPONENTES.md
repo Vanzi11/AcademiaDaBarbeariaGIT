@@ -32,6 +32,8 @@ Os fundamentos visuais (cor, tipografia, espaçamento) de cada componente vêm d
 
 **Comportamento:** fixo no topo ou com esconde-ao-rolar-para-baixo/aparece-ao-rolar-para-cima. Fundo Branco Marfim com leve sombra ao rolar, para separar do conteúdo sem borda pesada.
 
+**Navegação inteligente por âncora (Home):** os itens do menu (Biblioteca, Academia Recomenda, Academia News, Produtos) correspondem tanto a páginas dedicadas quanto a seções da Home (`PAGINAS/HOME.md`). Comportamento esperado: quando o usuário já está na Home, clicar em um desses itens rola suavemente até a seção correspondente na própria página (`scroll-behavior: smooth`, com `scroll-margin-top` compensando a altura do header fixo); em qualquer outra página, o mesmo link navega normalmente para a página dedicada (`/biblioteca/`, `/academia-recomenda/` etc.). Não há dois comportamentos diferentes de menu — é o mesmo link, resolvido de forma diferente conforme o contexto de onde o usuário já está. "Sobre" não corresponde a nenhuma seção da Home — é sempre navegação de página.
+
 **Onde é usado:** todas as páginas.
 
 ## 1.2 Mega Menu
@@ -113,6 +115,16 @@ Os fundamentos visuais (cor, tipografia, espaçamento) de cada componente vêm d
 ## 2.4 Card de Ferramenta (reservado)
 
 Reservado para roadmap futuro (calculadoras, checklists interativos). Não implementar nesta fase — apenas manter o espaço arquitetural previsto.
+
+## 2.5 Radar do Mercado (variante de lista do Card de Notícia)
+
+**Função:** apresentar notícias da Academia News em formato de varredura rápida — "radar", não "revista" — introduzido na Home pela Implementação V1 (`HOME_WIREFRAME.md`, Seção 5).
+
+**Anatomia:** linha compacta (não card com imagem): indicador de "novo" (ponto Dourado Terroso) quando publicada há menos de 7 dias · título · metadado de tempo relativo ("2 dias", "1 semana"). Divisor fino horizontal entre itens. Fundo Preto Carvão, texto Branco Marfim.
+
+**Regra de conteúdo:** usado exclusivamente em blocos de alta densidade e varredura rápida (Home). O arquivo completo de Academia News (`PAGINAS/ACADEMIA_NEWS.md`) continua usando o Card de Notícia padrão (2.1), com imagem — os dois formatos coexistem para funções diferentes: a Home prioriza velocidade de varredura, o arquivo prioriza navegação e imagem de apoio.
+
+**Onde é usado:** exclusivamente na seção "Radar do Mercado" da Home, nesta fase.
 
 ---
 
@@ -263,6 +275,26 @@ Reservado para roadmap futuro (calculadoras, checklists interativos). Não imple
 **Função:** recuperar um usuário que chegou a uma URL inexistente, mantendo-o no Portal.
 
 **Anatomia:** mensagem curta e didática (não humorística — coerente com a voz da Academia) + busca em destaque + atalhos para as 5 seções principais.
+
+## 6.4 Hero
+
+**Função:** comunicar a proposta de valor institucional em menos de cinco segundos, na abertura da Home. Introduzido pela Implementação V1 (`HOME_WIREFRAME.md`, Seção 1).
+
+**Anatomia:** headline (`display`) + subheadline (`corpo-grande`, máx. 2 linhas) + até 2 CTAs (primário invertido + fantasma). Fundo Verde Quadro Negro — única instância, junto da Seção 6.5, autorizada a preencher uma tela inteira com a superfície de assinatura fora do Modo Escuro completo.
+
+**Regra de conteúdo:** nunca imagem, vídeo ou elemento decorativo — força visual inteiramente tipográfica. Máximo 2 CTAs; nunca um terceiro.
+
+**Onde é usado:** Home (única página desenvolvida nesta fase). Extensível a outras páginas em fases futuras, mediante nova avaliação — não replicar automaticamente sem necessidade.
+
+## 6.5 Busca em Destaque (Search Hero)
+
+**Função:** apresentar a busca como o principal ponto de entrada da inteligência do Portal — não uma utilidade discreta de header.
+
+**Anatomia:** título curto (`h3`) + campo de busca largo (altura mínima 56px, acima do padrão de formulário do Design System) + até 3 sugestões de categoria em texto. Fundo Preto Carvão, glow de foco em Dourado Terroso.
+
+**Regra de conteúdo:** placeholder sempre contextual ("Buscar na Academia..."), nunca genérico. No lançamento, aciona a busca nativa do WordPress (`TEMA_WORDPRESS_AB.md`) — a proeminência é visual, não uma promessa de busca semântica ainda não construída.
+
+**Onde é usado:** Home, imediatamente após o Hero, formando um único bloco escuro de abertura.
 
 ---
 

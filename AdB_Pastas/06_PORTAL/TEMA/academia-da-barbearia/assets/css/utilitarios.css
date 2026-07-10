@@ -1,0 +1,32 @@
+/*
+ * Utilitários — pequenas classes de apoio, usadas com moderação.
+ * Nunca usar utilitário para recriar um componente já catalogado em componentes.css.
+ */
+
+.ab-oculto-visualmente {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.ab-so-mobile { display: block; }
+.ab-so-desktop { display: none; }
+@media (min-width: 1024px) {
+  .ab-so-mobile { display: none; }
+  .ab-so-desktop { display: block; }
+}
+
+.ab-texto-centro { text-align: center; }
+.ab-flex { display: flex; }
+.ab-flex-coluna { display: flex; flex-direction: column; }
+.ab-gap-3 { gap: var(--espaco-3); }
+.ab-gap-4 { gap: var(--espaco-4); }
+.ab-mt-6 { margin-top: var(--espaco-6); }
+.ab-mt-8 { margin-top: var(--espaco-8); }
+.ab-mb-0 { margin-bottom: 0; }

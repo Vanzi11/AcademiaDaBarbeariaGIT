@@ -1,0 +1,19 @@
+/*
+Theme Name: Academia da Barbearia
+Theme URI: https://academiadabarbearia.com.br
+Author: Academia da Barbearia
+Author URI: https://academiadabarbearia.com.br
+Description: Tema WordPress proprietário do Portal Brasileiro de Inteligência para Profissionais da Barbearia. Implementação técnica de PORTAL_DESIGN_SYSTEM.md (v1.0) e TEMA_WORDPRESS_AB.md (v1.0). Tema clássico customizado, sem page builder, com Custom Post Types para Biblioteca, Academia Recomenda, Academia News e Produtos.
+Version: 1.0.0
+Requires at least: 6.4
+Requires PHP: 8.0
+Tested up to: 6.6
+License: proprietário
+License URI: https://academiadabarbearia.com.br
+Text Domain: academia-da-barbearia
+Tags: custom-colors, custom-menu, custom-logo, editor-style, translation-ready
+
+Este arquivo contém apenas os metadados exigidos pelo WordPress.
+O CSS real do tema é organizado por responsabilidade em /assets/css/ e
+carregado condicionalmente por /inc/enqueue.php (ver TEMA_WORDPRESS_AB.md, Seção 6).
+*/

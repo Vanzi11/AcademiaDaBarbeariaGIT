@@ -133,6 +133,26 @@ Cada página institucional descrita em `06_PORTAL/PAGINAS/` corresponde a um tem
 
 Regra de ouro de template: **se dois templates precisam do mesmo bloco visual, esse bloco vira um template-part antes que o segundo template seja escrito.** Duplicação de marcação é a principal causa de inconsistência visual em temas WordPress de longo prazo.
 
+## 4.1 `front-page.php` (Home) — Implementação V1
+
+Especificação visual completa em `HOME_WIREFRAME.md`. Sequência de template-parts que compõem o template, na ordem definida em `PAGINAS/HOME.md`:
+
+```
+get_header()
+template-parts/hero/hero-home.php
+template-parts/components/busca-destaque.php
+template-parts/cards/secao-academia-recomenda.php   (grid de 3 Card de Produto)
+template-parts/cards/secao-biblioteca.php            (grid de 3 Card de Artigo)
+template-parts/cards/secao-radar-mercado.php         (lista de 4 Radar do Mercado)
+template-parts/components/cta-produto-home.php       (Kit Fundação da Barbearia)
+template-parts/components/newsletter.php
+get_footer()
+```
+
+Cada bloco acima é seu próprio template-part, isolado, para que o mesmo componente possa ser reutilizado (ex.: `secao-biblioteca.php` reutiliza o mesmo template-part de Card de Artigo já usado em `archive-artigo.php`) sem duplicar marcação.
+
+**Performance da Home, especificamente:** o Hero e a Busca em Destaque não carregam nenhuma imagem, vídeo ou ícone pesado — são compostos inteiramente por tipografia e cor sólida (`HOME_WIREFRAME.md`, Seção 1). Isso elimina a maior causa comum de LCP (Largest Contentful Paint) alto em páginas de abertura, e é uma decisão de design que também é uma decisão de performance. As únicas imagens carregadas acima da dobra em telas grandes são as fotografias de produto da seção Academia Recomenda, já cobertas pelas regras gerais de otimização de imagem da Seção 6.
+
 ---
 
 # 5. SEO Técnico

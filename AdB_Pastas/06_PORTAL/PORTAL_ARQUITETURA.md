@@ -182,10 +182,16 @@ Estrutura de colunas do rodapé:
 ```
 Institucional          Biblioteca              Academia Recomenda      Conecte-se
 Sobre                  Ver categorias           Ver categorias          Instagram
-Contato                                                                  YouTube
-Política de Privacidade                                                  WhatsApp
-Termos de Uso                                                             Newsletter (formulário)
+Contato                                                                  Facebook
+Política de Privacidade                                                  YouTube
+Termos de Uso                                                             WhatsApp · Newsletter (formulário)
 ```
+
+**Redes sociais oficiais (confirmadas pelo fundador):**
+
+* Instagram: `@academiadabarbearia2026`
+* Facebook: `https://www.facebook.com/share/1PYUuPLMNR/`
+* YouTube e WhatsApp: links ainda não confirmados — manter como itens reservados no rodapé até a confirmação.
 
 ---
 

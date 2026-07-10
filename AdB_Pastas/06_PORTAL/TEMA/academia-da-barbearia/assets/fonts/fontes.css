@@ -1,0 +1,49 @@
+/*
+ * @font-face — DM Sans e DM Serif Display hospedadas localmente.
+ * TEMA_WORDPRESS_AB.md, Seção 2: "nunca via CDN externo, por performance e LGPD".
+ *
+ * Os arquivos .woff2 referenciados aqui ainda precisam ser adicionados a esta
+ * pasta antes do lançamento em produção — ver LEIA-ME.md nesta mesma pasta.
+ * Até lá, o navegador usa o fallback de sistema definido em tokens.css
+ * (--fonte-titulos, --fonte-texto), sem quebrar o layout.
+ */
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("dm-sans-latin-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("dm-sans-latin-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("dm-sans-latin-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("dm-sans-latin-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Serif Display";
+  src: url("dm-serif-display-latin-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

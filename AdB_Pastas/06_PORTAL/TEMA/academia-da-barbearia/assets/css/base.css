@@ -1,0 +1,117 @@
+/*
+ * Base — reset e fundamentos de tipografia/leitura
+ * Depende de tokens.css (carregado antes deste arquivo).
+ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--altura-header, 72px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--cor-fundo-pagina);
+  color: var(--cor-texto-principal);
+  font-family: var(--fonte-texto);
+  font-size: var(--tipo-corpo);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  transition: background var(--duracao-transicao) var(--easing-entrada),
+              color var(--duracao-transicao) var(--easing-entrada);
+}
+
+img, svg, video { max-width: 100%; height: auto; display: block; }
+
+h1, h2, h3, h4 {
+  font-family: var(--fonte-titulos);
+  line-height: 1.25;
+  margin: 0 0 var(--espaco-3);
+  font-weight: 700;
+}
+
+h1 { font-size: var(--tipo-h1); }
+h2 { font-size: var(--tipo-h2); font-weight: 600; }
+h3 { font-size: var(--tipo-h3); font-weight: 600; font-family: var(--fonte-texto); }
+h4 { font-size: var(--tipo-h4); font-weight: 600; font-family: var(--fonte-texto); }
+
+.ab-display {
+  font-family: var(--fonte-titulos);
+  font-size: var(--tipo-display);
+  line-height: 1.15;
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 var(--espaco-3);
+  max-width: 65ch;
+}
+
+p.ab-corpo-grande { font-size: var(--tipo-corpo-grande); max-width: 60ch; }
+.ab-legenda { font-size: var(--tipo-legenda); color: var(--cor-texto-terciario); }
+.ab-micro { font-size: var(--tipo-micro); font-weight: 500; letter-spacing: 0.04em; }
+
+a { color: inherit; }
+a.ab-link {
+  color: var(--ab-dourado-terroso);
+  text-decoration: none;
+}
+a.ab-link:hover { text-decoration: underline; }
+
+/* Texto corrido nunca justificado sem hifenização — mantido à esquerda */
+.ab-conteudo-editorial {
+  max-width: 65ch;
+  line-height: 1.6;
+}
+.ab-conteudo-editorial p { line-height: inherit; }
+
+ul, ol { padding-left: 1.25em; }
+li { margin-bottom: var(--espaco-2); }
+
+/* Foco de teclado — nunca removido sem substituto (Design System 4.8) */
+:focus-visible {
+  outline: 2px solid var(--ab-dourado-terroso);
+  outline-offset: 2px;
+}
+:focus:not(:focus-visible) { outline: none; }
+
+button { font-family: inherit; }
+
+.ab-container {
+  max-width: var(--largura-conteudo-max);
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 1440px) {
+  .ab-container { padding-left: 80px; padding-right: 80px; }
+}
+
+main:focus { outline: none; }
+
+.ab-skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--ab-preto-carvao);
+  color: var(--ab-branco-marfim);
+  padding: var(--espaco-2) var(--espaco-4);
+  z-index: 100;
+  border-radius: 0 0 var(--raio-pequeno) 0;
+}
+.ab-skip-link:focus {
+  left: 0;
+}

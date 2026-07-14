@@ -115,3 +115,19 @@ AdB_Pastas/
 - Criar índice de versões do Produto 001.
 - Unificar duplicatas somente após decisão formal.
 - Padronizar arquivos textuais sem extensão.
+
+---
+
+# Migração Adicional — Renumeração de 09_OPERACOES para 11_OPERACOES
+
+Após a migração original, a IA Pesquisadora (Departamento de Inteligência de Produtos, operando dentro de `08_INTELIGENCIA_ARTIFICIAL/`) recebeu uma Base de Conhecimento própria (`08_INTELIGENCIA_ARTIFICIAL/BASE_DE_CONHECIMENTO/`) para armazenar os dossiês técnicos de produtos físicos pesquisados.
+
+Essa Base de Conhecimento foi mantida como subpasta de `08_INTELIGENCIA_ARTIFICIAL/`, não como departamento de topo, evitando uma mudança estrutural maior. Para deixar o número 09 reservado a um eventual departamento futuro de Inteligência de Produtos — caso o volume de produtos algum dia justifique essa promoção —, `09_OPERACOES` foi renumerado para `11_OPERACOES`.
+
+**Ação:** conteúdo de `09_OPERACOES/` (README.md, PLAYBOOK.md, FINANCEIRO/LEGADO_10_FINANCEIRO/) copiado integralmente para `11_OPERACOES/`, sem alteração de conteúdo além do cabeçalho do README.
+
+**Pendência técnica:** a exclusão da pasta antiga `09_OPERACOES/` não pôde ser concluída nesta sessão por limitação de acesso do ambiente a este caminho específico do OneDrive. `09_OPERACOES/` e `11_OPERACOES/` coexistem temporariamente com conteúdo duplicado até que a pasta antiga seja removida manualmente.
+
+**Aprovação:** explícita do CEO, conforme exigido pelo `PLAYBOOK.md` ("Nenhuma alteração de arquitetura poderá ocorrer sem aprovação do CEO").
+
+Documentos atualizados em consequência: `ARQUITETURA_DO_REPOSITORIO.md` (v1.0 → v1.1), `PLANO_DE_MIGRACAO_DO_REPOSITORIO.md` (nota de rodapé), `CATALOGO_DOCUMENTAL.md` (3 linhas corrigidas).

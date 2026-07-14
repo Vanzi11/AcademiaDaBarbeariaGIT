@@ -1,0 +1,3 @@
+# PRODUTOS/MAQUINAS
+
+Dossiês técnicos (MODELO_DE_DADOS_DO_PRODUTO) de produtos da categoria Máquinas. Nome de arquivo: `<ID>_<NOME_NORMALIZADO>.md` (ex.: `MAQ-000001_WAHL_5_STAR_CORDLESS_SENIOR.md`). Índice em `BASE_DE_CONHECIMENTO/CATALOGOS/CATALOGO_MAQUINAS.md`.

@@ -4,7 +4,7 @@
 
 **Documento:** Arquitetura Oficial do Repositório
 
-**Versão:** 1.0
+**Versão:** 1.1
 
 **Status:** Documento Oficial de Governança
 
@@ -179,12 +179,16 @@ A estrutura poderá evoluir, mas seguirá sempre esta lógica.
 
 08_INTELIGENCIA_ARTIFICIAL/
 
-09_OPERACOES/
+09_ (reservado)
 
 10_PATRIMONIO_INTELECTUAL/
 
+11_OPERACOES/
+
 99_ARQUIVO/
 ```
+
+O número 09 fica reservado, sem uso imediato. Ele existia anteriormente como `09_OPERACOES`, renumerado para `11_OPERACOES` para abrir espaço a um eventual departamento de Inteligência de Produtos, caso a Base de Conhecimento de produtos físicos (hoje uma subpasta de `08_INTELIGENCIA_ARTIFICIAL/`) cresça o suficiente para justificar um departamento próprio, conforme o critério já definido em "Critérios para Novos Departamentos" do `PLANO_DE_MIGRACAO_DO_REPOSITORIO.md`.
 
 ---
 
@@ -312,18 +316,6 @@ Ferramentas.
 
 ---
 
-## 09_OPERACOES
-
-Processos internos.
-
-Fluxos.
-
-Playbooks.
-
-Operação da empresa.
-
----
-
 ## 10_PATRIMONIO_INTELECTUAL
 
 Documentos históricos.
@@ -335,6 +327,20 @@ Design Rationale.
 Memória institucional.
 
 Registro da evolução intelectual.
+
+---
+
+## 11_OPERACOES
+
+Processos internos.
+
+Fluxos.
+
+Playbooks.
+
+Operação da empresa.
+
+Renumerado de `09_OPERACOES` (ver Histórico de Revisão).
 
 ---
 
@@ -466,6 +472,14 @@ Sempre priorizar estabilidade.
 O repositório da Academia da Barbearia deve representar fielmente a organização da empresa e preservar seu patrimônio intelectual.
 
 A organização documental deve facilitar o trabalho humano, das Inteligências Artificiais e do Codex, garantindo consistência, escalabilidade e continuidade ao longo dos anos.
+
+---
+
+# Histórico de Revisão
+
+**v1.1** — `09_OPERACOES` renumerado para `11_OPERACOES`, liberando o número 09 para um eventual departamento futuro de Inteligência de Produtos. Motivo: a IA Pesquisadora (departamento de Inteligência de Produtos, hoje operando dentro de `08_INTELIGENCIA_ARTIFICIAL/`) passou a ter uma Base de Conhecimento própria (`08_INTELIGENCIA_ARTIFICIAL/BASE_DE_CONHECIMENTO/`). Por ora ela vive como subpasta — não como departamento de topo —, mas se o volume de produtos justificar um departamento dedicado no futuro, o número 09 já fica reservado, evitando uma segunda renumeração. Aprovado explicitamente pelo CEO. Detalhes em `RELATORIO_DE_MIGRACAO.md` e em `08_INTELIGENCIA_ARTIFICIAL/REVISOES/RELATORIO_REVISAO_V4.md`.
+
+**v1.0** — Versão original deste documento, definindo a arquitetura oficial do repositório.
 
 ---
 

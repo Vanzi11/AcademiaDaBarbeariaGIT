@@ -191,4 +191,10 @@ Ao término da migração, o repositório deverá representar fielmente a estrut
 
 ---
 
+# Nota Posterior
+
+A matriz acima registra a migração original tal como decidida na época (`09_OPERACOES`). Uma renumeração adicional — `09_OPERACOES` → `11_OPERACOES`, para reservar o número 09 a um eventual departamento futuro de Inteligência de Produtos — foi decidida e executada depois. Ver `RELATORIO_DE_MIGRACAO.md`, seção "Migração Adicional", e `ARQUITETURA_DO_REPOSITORIO.md` v1.1.
+
+---
+
 **Fim do Documento**

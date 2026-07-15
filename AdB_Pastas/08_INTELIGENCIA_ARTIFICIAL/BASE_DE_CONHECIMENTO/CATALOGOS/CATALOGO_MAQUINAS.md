@@ -10,7 +10,8 @@
 
 | ID | Produto | Subcategoria | Status | Arquivo | Última Revisão |
 | --- | --- | --- | --- | --- | --- |
-| | | | | | |
+| MAQ-000001 | Wahl 5-Star Cord/Cordless Senior | Máquinas de Acabamento | Aguardando revisão humana | PRODUTOS/MAQUINAS/MAQ-000001_WAHL_5_STAR_CORD_CORDLESS_SENIOR.md | 14/07/2026 |
+| MAQ-000002 | Wahl 5-Star Senior 2.0 Cord/Cordless | Máquinas de Acabamento | Aguardando revisão humana | PRODUTOS/MAQUINAS/MAQ-000002_WAHL_5_STAR_SENIOR_2_0_CORD_CORDLESS.md | 14/07/2026 |
 
 ---
 

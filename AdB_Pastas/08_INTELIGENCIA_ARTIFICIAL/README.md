@@ -15,7 +15,17 @@ O manual institucional das IAs permanece em 00_GOVERNANCA por sua função norma
 - `LIMITACOES.md` (v1.7) — o que o agente não faz e quando exigir revisão humana
 - `RELATORIO_FINAL.md` (v1.7) — avaliação de prontidão e pendências
 - `CRITERIOS_DE_AVALIACAO/MAQUINAS.md` (v4.2) — protocolo de coleta da primeira categoria de produtos (Máquinas), usado pela IA Pesquisadora
-- `MODELO_DE_DADOS_DO_PRODUTO.md` (v1.4) — Convenção de Fontes e Confiabilidade calculada, Produtos Relacionados factuais, Registro de Conflitos, Citações Literais e Idioma Original, Diário de Pesquisa condicional, ID Interno da Academia formalizado
+- `MODELO_DE_DADOS_DO_PRODUTO.md` (v1.5) — Convenção de Fontes e Confiabilidade calculada, Produtos Relacionados factuais, Registro de Conflitos, Citações Literais e Idioma Original, Diário de Pesquisa condicional, ID Interno da Academia formalizado, Camada 7 reconciliada entre os três documentos que a descreviam
 - `BASE_DE_CONHECIMENTO/` — patrimônio permanente dos dossiês pesquisados: README.md, catálogos e pastas por categoria (Máquinas, Tesouras, Navalhas, Pós-Barba, Cabelo, Cadeiras, Lavatórios, Software, Educação)
-- `REVISOES/ORDEM_DE_REVISAO_V1.md`, `REVISOES/RELATORIO_REVISAO_V2.md`, `REVISOES/RELATORIO_REVISAO_V3.md` e `REVISOES/RELATORIO_REVISAO_V4.md` — histórico das rodadas de revisão pós-teste real e de decisões arquiteturais (produtos "Wahl Senior Cordless" e "Senior 2.0"; Base de Conhecimento)
+- `REVISOES/ORDEM_DE_REVISAO_V1.md`, `REVISOES/RELATORIO_REVISAO_V2.md`, `REVISOES/RELATORIO_REVISAO_V3.md`, `REVISOES/RELATORIO_REVISAO_V4.md` e `REVISOES/RELATORIO_IMPLEMENTACAO_IA_ACADEMIA_V1.md` — histórico das rodadas de revisão pós-teste real e de decisões arquiteturais (produtos "Wahl Senior Cordless" e "Senior 2.0"; Base de Conhecimento; construção da IA Academia)
+
+### IA Academia — Versão Lite (agente v1.0 — pronto para uso supervisionado)
+
+- `IA_ACADEMIA/IA_ACADEMIA.md` (v1.0) — missão, escopo e arquitetura do agente
+- `IA_ACADEMIA/PROMPT_IA_ACADEMIA.md` (v1.0) — prompt operacional pronto para uso
+- `IA_ACADEMIA/GUIA_DE_UTILIZACAO.md` (v1.0) — como configurar e operar
+- `IA_ACADEMIA/CASOS_DE_TESTE.md` (v1.0) — bateria de validação (11 casos)
+- `IA_ACADEMIA/LIMITACOES.md` (v1.0) — o que o agente não faz e quando exigir revisão humana
+- `IA_ACADEMIA/RELATORIO_FINAL.md` (v1.0) — avaliação de prontidão e pendências
+- Recebe um `MODELO_DE_DADOS_DO_PRODUTO` já pesquisado pela IA Pesquisadora e preenche exclusivamente a Camada 7 ("Inteligência da Academia"), com rastreabilidade obrigatória a cada campo das Camadas 1-6. Não pesquisa, não compara produtos entre si (Versão Lite: um produto por execução).
 

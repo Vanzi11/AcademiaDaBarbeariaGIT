@@ -4,7 +4,7 @@
 
 **Departamento:** Inteligência de Produtos
 
-**Versão:** 1.4
+**Versão:** 1.5
 
 **Status:** Documento Fundador
 
@@ -565,23 +565,23 @@ Link
 
 # Inteligência da Academia
 
-Esta camada representa o patrimônio intelectual da Academia.
+Esta camada representa o patrimônio intelectual da Academia. Preenchida exclusivamente pela IA Academia — nunca pela IA Pesquisadora nem pela IA Editorial.
 
 Jamais copiar opiniões externas.
 
-Campos.
+Campos (lista reconciliada — ver nota abaixo):
 
 Resumo Técnico
 
-Conclusão
+Para quem é
 
-Produto indicado para
+Para quem não é
 
-Produto não indicado para
+Pontos Fortes
 
-Principais vantagens
+Pontos Fracos
 
-Principais limitações
+Vale o investimento?
 
 Quando comprar
 
@@ -589,13 +589,17 @@ Quando não comprar
 
 Melhor alternativa
 
-Produtos concorrentes
+Conclusão
 
-Posicionamento da Academia
+Nota da Academia
 
-Nota Técnica
+Toda conclusão registrada nesta camada deve citar explicitamente de qual campo das Camadas 1 a 6 ela deriva — nunca uma afirmação solta sem rastro até o dado pesquisado.
 
-Grau de recomendação
+**Melhor alternativa** é restrita aos "Produtos Relacionados" já declarados na Camada 2 (versão anterior, versão seguinte, mesma linha) — nunca um produto de outro fabricante, que exigiria dados pesquisados que esta camada não possui. Quando não houver relacionado aplicável, registrar "Não identificada com os dados disponíveis", nunca inventar uma.
+
+**Nota da Academia** representa apenas a adequação do produto ao contexto analisado — nunca uma nota comparativa entre produtos diferentes. Dois produtos distintos podem ter notas semelhantes para públicos completamente diferentes, sem contradição.
+
+**Nota sobre reconciliação (v1.5):** esta lista substitui uma versão anterior de 13 campos (que incluía "Produtos concorrentes", "Posicionamento da Academia", "Nota Técnica" e "Grau de recomendação" como itens separados) por divergir de `FRAMEWORK_AVALIACAO_DE_PRODUTOS.md` e `PROCESSO_DE_ANALISE.md` — os dois documentos que definem a metodologia de avaliação em si, e que têm mais autoridade sobre o formato da conclusão do que esta lista de campos. "Produtos concorrentes" foi removido por ser inviável para um agente que analisa um produto por vez, sem acesso a dados pesquisados de outros produtos — inventar essa comparação violaria a regra de nunca inventar fatos. Fica reservado para uma futura IA Comparadora, com acesso a múltiplos produtos. "Nota Técnica" e "Grau de recomendação" foram colapsados em "Nota da Academia", já definida em `FRAMEWORK_AVALIACAO_DE_PRODUTOS.md`. Detalhes em `08_INTELIGENCIA_ARTIFICIAL/REVISOES/RELATORIO_IMPLEMENTACAO_IA_ACADEMIA_V1.md`.
 
 ---
 
@@ -839,6 +843,8 @@ Somente após sua validação poderão ser gerados:
 # Histórico de Revisão
 
 **v1.3** — Após a segunda rodada de teste real (produtos "Wahl Senior Cordless" clássico e "Senior 2.0"), incorporadas as seguintes decisões, detalhadas em `08_INTELIGENCIA_ARTIFICIAL/REVISOES/RELATORIO_REVISAO_V3.md`: Convenção de Fontes e Confiabilidade (enumeração fechada de origem + confiabilidade calculada, nunca estrelas atribuídas livremente); Produtos Relacionados como fato sourciável, com "Concorrentes" explicitamente excluído por já pertencer à Camada 7; Citações Literais e Idioma Original, escopado às Camadas 4 e 6; campo de Observação livre em qualquer campo da Camada 3, em vez de novos sub-atributos fixos por tipo de componente; Diário de Pesquisa como artefato condicional, não obrigatório para todo produto.
+
+**v1.5** — Reconciliada a lista de campos da Camada 7 (Inteligência da Academia) com `FRAMEWORK_AVALIACAO_DE_PRODUTOS.md` e `PROCESSO_DE_ANALISE.md`, que já definiam uma lista diferente da que constava aqui. Removidos "Produtos concorrentes" (inviável para um agente que analisa um produto por vez), "Posicionamento da Academia" (redundante com "Conclusão") e "Grau de recomendação" (redundante com "Nota da Academia"). Devolvido "Vale o investimento?", ausente da versão anterior desta lista apesar de exigido nos outros dois documentos. Motivada pela construção da IA Academia (Versão Lite) — ver `08_INTELIGENCIA_ARTIFICIAL/REVISOES/RELATORIO_IMPLEMENTACAO_IA_ACADEMIA_V1.md`.
 
 **v1.4** — Formalizado o ID Interno da Academia (Camada 1) — campo já listado desde a v1.0 mas nunca definido. Passa a ter formato, regra de atribuição (no momento de entrada na Base de Conhecimento) e imutabilidade explícitos, em decorrência da criação de `08_INTELIGENCIA_ARTIFICIAL/BASE_DE_CONHECIMENTO/`. Ver `08_INTELIGENCIA_ARTIFICIAL/REVISOES/RELATORIO_REVISAO_V4.md`.
 

@@ -4,7 +4,7 @@
 
 **Departamento:** Inteligência de Produtos
 
-**Versão:** 1.0
+**Versão:** 1.2
 
 ---
 
@@ -24,9 +24,9 @@ Recebe um `MODELO_DE_DADOS_DO_PRODUTO` já pesquisado e preenche exclusivamente 
 
 Não pesquisa. Depende inteiramente da qualidade do trabalho da IA Pesquisadora — "dado ruim entra, conclusão ruim sai" é um risco real e estrutural, não uma falha desta IA especificamente.
 
-Não compara produtos entre si, não produz rankings, "Top 10" ou "qual é o melhor". Esta é a Versão Lite: avalia um produto por vez. Comparação é escopo de uma futura IA Comparadora.
+Não compara este produto com produtos de outro fabricante, não produz rankings, "Top 10" ou "qual é o melhor" — isso é escopo de uma futura IA Comparadora. Desde a v1.2, pode comparar o produto (inclusive quantitativamente) com um Produto Relacionado já declarado na Camada 2 — mesma linha, mesmo fabricante, versão anterior/posterior — nos campos que já previam esse cruzamento. Fora dessa exceção declarada, avalia um produto por vez.
 
-Não altera as Camadas 1 a 6, a Camada 8, nem o conteúdo do Registro de Conflitos da Camada 9 — só o campo Status desse registro.
+Não altera as Camadas 1 a 6, a Camada 8, nem qualquer campo da Camada 9 — nem o Registro de Conflitos, nem o próprio Status da Camada 9 (que descreve governança editorial do arquivo: Em revisão/Publicado/Arquivado/Necessita atualização — um assunto diferente do estágio de pipeline). A única atualização de status que a IA Academia recomenda é a do catálogo da categoria na Base de Conhecimento, e apenas em texto — nunca editando o arquivo diretamente.
 
 Não decide sozinha quando um conflito registrado deve ser resolvido — apenas reduz a confiança da conclusão afetada e menciona a limitação.
 
@@ -67,9 +67,15 @@ Esta versão não tem acesso a um catálogo de outros produtos da mesma categori
 
 **Herança silenciosa de erros de pesquisa:** um dado mal pesquisado na Camada 3 pode virar uma conclusão equivocada na Camada 7, sem que a Academia tenha como perceber.
 
-**Uso fora de escopo:** pedir comparação entre produtos ou "melhor da categoria" a esta versão. O prompt recusa isso, mas um uso insistente pode tentar forçar a resposta — qualquer saída comparativa deve ser tratada como falha.
+**Uso fora de escopo:** pedir comparação com produto de outro fabricante ou "melhor da categoria" a esta versão. O prompt recusa isso, mas um uso insistente pode tentar forçar a resposta — qualquer saída comparativa envolvendo produto fora da Camada 2 deve ser tratada como falha. A comparação com um Produto Relacionado da mesma linha (v1.2) não se enquadra aqui — é comportamento esperado.
 
 **Desatualização:** uma conclusão da Academia reflete o estado da pesquisa no momento em que foi feita. Se o produto for reexaminado depois (nova versão, recall, especificação atualizada), a Camada 7 deve ser refeita, não presumida como permanente.
+
+---
+
+# Pendência Registrada: Escala da "Nota da Academia"
+
+O campo "Nota da Academia" hoje não tem escala, critérios ou significado formalizados além da regra de não ser comparativa. Isso cria um risco real: duas execuções (ou dois revisores humanos) podem atribuir notas diferentes a produtos objetivamente equivalentes, por falta de uma régua comum. Não é urgente — a versão atual já funciona com revisão humana caso a caso — mas recomenda-se, no futuro, um documento dedicado (`ESCALA_DA_NOTA_DA_ACADEMIA.md`) definindo a escala e os critérios. Identificado durante uma segunda revisão externa (GPT) e validado como uma lacuna real, não uma correção urgente.
 
 ---
 

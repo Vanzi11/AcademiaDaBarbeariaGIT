@@ -4,7 +4,7 @@
 
 **Departamento:** Inteligência de Produtos
 
-**Versão:** 1.0
+**Versão:** 1.2
 
 ---
 
@@ -16,7 +16,7 @@ Este relatório encerra o processo de construção do segundo Agente Oficial da 
 
 # 1. O agente respeita toda a documentação da Academia?
 
-Sim, com uma correção feita durante a construção: a proposta original (de origem externa, GPT) usava a lista de 13 campos da Camada 7 tal como constava em `MODELO_DE_DADOS_DO_PRODUTO.md` — mas esse documento divergia de `FRAMEWORK_AVALIACAO_DE_PRODUTOS.md` e `PROCESSO_DE_ANALISE.md`, que definem a metodologia de avaliação em si. A reconciliação está descrita em `REVISOES/RELATORIO_IMPLEMENTACAO_IA_ACADEMIA_V1.md` e já aplicada em `MODELO_DE_DADOS_DO_PRODUTO.md` (v1.5).
+Sim, com três correções. A primeira, feita durante a construção: a proposta original (de origem externa, GPT) usava a lista de 13 campos da Camada 7 tal como constava em `MODELO_DE_DADOS_DO_PRODUTO.md` — mas esse documento divergia de `FRAMEWORK_AVALIACAO_DE_PRODUTOS.md` e `PROCESSO_DE_ANALISE.md`, que definem a metodologia de avaliação em si. A reconciliação está descrita em `REVISOES/RELATORIO_IMPLEMENTACAO_IA_ACADEMIA_V1.md` e já aplicada em `MODELO_DE_DADOS_DO_PRODUTO.md` (v1.5). A segunda, feita na v1.1 (após uma segunda revisão externa): a v1.0 mandava a IA Academia escrever no Status da Camada 9, um campo com enum fechado próprio (governança editorial), incompatível com o valor que estava sendo escrito ali. A terceira, feita na v1.2 (após um primeiro teste real e uma terceira revisão externa): o comportamento já consultava dados de um Produto Relacionado para comparação factual, mas a documentação ainda dizia "recebe 1 produto" — corrigido alinhando a documentação ao comportamento (desejado), com escopo restrito a Produtos Relacionados da mesma linha e fabricante. Ver Histórico de Revisão de `IA_ACADEMIA.md`.
 
 ---
 
@@ -36,7 +36,8 @@ Detalhadas integralmente em `LIMITACOES.md`. As mais relevantes: dependência to
 
 - Uma versão completa da IA Academia (ou uma IA Comparadora dedicada), com acesso a múltiplos produtos da mesma categoria na Base de Conhecimento, para preencher "Produtos concorrentes" com dados reais — campo removido nesta versão por inviabilidade, não por decisão definitiva.
 - Um teste de integração ponta a ponta real (Pesquisadora → Academia) usando os dois produtos já cadastrados (`MAQ-000001`, `MAQ-000002`).
-- Avaliar se o campo Status precisa de mais estados além de "Analisado pela IA Academia" conforme o pipeline evoluir (ex.: quando a IA Editorial existir).
+- Avaliar se o Status do catálogo precisa de mais estados além de "Analisado pela IA_Academia" conforme o pipeline evoluir (ex.: quando a IA Editorial existir).
+- Criar `ESCALA_DA_NOTA_DA_ACADEMIA.md` definindo escala e critérios da "Nota da Academia" — hoje o campo existe sem régua formalizada (ver `LIMITACOES.md`).
 
 ---
 

@@ -4,7 +4,7 @@
 
 **Data da pesquisa:** 14/07/2026
 
-**Status do cadastro:** Aguardando Análise da IA Academia
+**Status do cadastro:** Analisado pela IA_Academia (16/07/2026) — este cabeçalho espelha o Status do catálogo; a Camada 9 abaixo não foi alterada por esta análise (ver Sugestões de Melhoria)
 
 ---
 
@@ -91,7 +91,33 @@ Não pesquisado nesta rodada. Esta pesquisa priorizou Fontes Primárias (Nível 
 
 ## CAMADA 7 — Inteligência da Academia
 
-Não aplicável — etapa exclusiva da IA Academia.
+**Resumo Técnico:** Clipper profissional cord/cordless da linha 5-Star da Wahl, com motor rotativo "V9000", autonomia de 80 minutos, uso permitido durante a carga, e construção com base metálica de alumínio de alto impacto. (Deriva de: Camada 3, campos Motor, Autonomia, Uso durante carregamento, Material da carcaça)
+
+**Para quem é:** Barbeiros e cabeleireiros profissionais que realizam sessões de corte prolongadas e valorizam controle e consistência ao longo do dia — posicionamento declarado pelo próprio fabricante. (Deriva de: Camada 4, campo Citação Literal e Uso declarado)
+
+**Para quem não é:** Profissionais que priorizam ter o dado de RPM do motor confirmado para comparação técnica, ou que já buscam a tecnologia de motor mais recente da própria linha (brushless com ajuste automático por tipo de cabelo) — recursos presentes apenas na versão seguinte. (Deriva de: Camada 3, campo RPM deste produto; Camada 2, campo Produtos Relacionados, cruzado com a Camada 3 de MAQ-000002)
+
+**Pontos Fortes:** Alimentação cord/cordless com uso permitido durante a carga; cabo de grau profissional resistente a produtos químicos; carcaça em alumínio de alto impacto; kit de acessórios completo (3 pentes-guia, óleo lubrificante, escova de limpeza, pente de estilo, protetor de lâmina). (Deriva de: Camada 3, campos Alimentação, Uso durante carregamento, Cabo, Material da carcaça, Acessórios inclusos)
+
+**Pontos Fracos:** RPM do motor não é publicado pelo fabricante para este modelo específico, dificultando comparação técnica objetiva; garantia sem duração exata publicada para este SKU; peso declarado (453,6 g) tem confiabilidade reduzida — pode refletir peso de embalagem/envio, não do aparelho isolado. (Deriva de: Camada 3, campos RPM, Garantia, Peso; Camada 9, Registro de Conflitos)
+
+**Vale o investimento?:** Considerando o contexto profissional — não apenas o preço — sim, para quem busca um clipper cord/cordless consolidado, com kit de acessórios completo e ainda vendido oficialmente por preço promocional. Não há dados suficientes nas Camadas 1-6 para avaliar durabilidade de longo prazo, já que a Camada 6 (Evidências de Mercado) não foi pesquisada nesta rodada. (Deriva de: Camada 8, campo Preço observado; Camada 6)
+
+**Quando comprar:** Quando o profissional busca uma opção cord/cordless madura e de marca estabelecida, e não depende do dado de RPM confirmado para decidir — especialmente enquanto o preço promocional observado estiver vigente. (Deriva de: Camada 8, campo Preço observado)
+
+**Quando não comprar:** Quando o profissional deseja a tecnologia de motor mais recente da própria Wahl (brushless com Adaptive Speed Control™) ou precisa de RPM confirmado para comparação técnica — informação ausente para este modelo. (Deriva de: Camada 2, campo Produtos Relacionados, cruzado com a Camada 3 de MAQ-000002)
+
+**Melhor alternativa:** 5-Star Senior 2.0 Cord/Cordless (MAQ-000002), declarada pelo próprio fabricante como sucessora direta desta máquina. (Deriva de: Camada 2, campo Produtos Relacionados)
+
+**Conclusão:** Um clipper cord/cordless profissional consolidado, adequado para quem valoriza uso contínuo durante a carga e um kit de acessórios completo, mas com duas lacunas de dado (RPM e peso confiável) que pedem cautela antes de tratá-lo como referência técnica definitiva, e sem evidências de mercado coletadas ainda para confirmar confiabilidade de longo prazo.
+
+**Nota da Academia:** Adequação alta para o contexto de um profissional que busca um cord/cordless estabelecido, com acessórios completos e uso permitido durante a carga — nota não comparativa com a versão 2.0 (ver `LIMITACOES.md` da IA Academia sobre a ausência de escala formalizada para este campo).
+
+## Recomendação de Atualização de Status
+Recomenda-se atualizar o Status na linha correspondente do catálogo (`CATALOGO_MAQUINAS.md`) para "Analisado pela IA_Academia". A Camada 9 deste arquivo não foi alterada.
+
+## Sugestões de Melhoria à Documentação (se houver)
+O campo "Status" da Camada 9 e o cabeçalho "Status do cadastro" deste arquivo trazem o valor "Aguardando Análise da IA Academia" — que não pertence a nenhum dos dois enums fechados hoje definidos (o da Camada 9, sobre governança editorial, ou o do catálogo, sobre pipeline). Isso é anterior à correção de v1.1 da IA Academia e não foi alterado por esta análise, já que a Camada 9 está fora do escopo deste agente — fica registrado como sugestão para alinhamento futuro pela IA Pesquisadora ou por revisão humana.
 
 ---
 

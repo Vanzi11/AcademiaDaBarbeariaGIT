@@ -4,7 +4,7 @@
 
 **Departamento:** Inteligência de Produtos
 
-**Versão:** 1.0
+**Versão:** 1.1
 
 ---
 
@@ -100,6 +100,11 @@ O catálogo é um **índice derivado**, não uma segunda fonte da verdade. "Últ
 - `Completo`
 - `Aguardando revisão humana`
 - `Aguardando Academia`
+- `Analisado pela IA_Academia`
+
+**Convenção de nomenclatura (v1.1):** quando um valor de Status referenciar diretamente um agente de IA, o nome do agente é escrito no formato `IA_Nome` (com underscore, igual ao nome da subpasta do agente em `08_INTELIGENCIA_ARTIFICIAL/`, ex.: `IA_ACADEMIA/`) — não "IA Nome" com espaço. Isso vale para todo valor de Status futuro que nomear um agente (ex.: um eventual "Publicado pela IA_Editorial").
+
+**Nota sobre a Camada 9 (v1.1):** este Status do catálogo é conceitualmente diferente do Status da Camada 9 (Controle Editorial) de cada dossiê — a Camada 9 descreve o estado de governança editorial do próprio arquivo (`Em revisão` / `Publicado` / `Arquivado` / `Necessita atualização`), não o estágio do produto no pipeline de IAs. Nenhum agente deve escrever um valor de um enum no campo do outro. Ver `IA_ACADEMIA/RELATORIO_FINAL.md` para o histórico desta correção.
 
 ---
 

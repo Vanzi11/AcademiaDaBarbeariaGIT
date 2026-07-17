@@ -4,7 +4,7 @@
 
 **Departamento:** Inteligência de Produtos
 
-**Versão:** 1.0
+**Versão:** 1.2
 
 ---
 
@@ -40,15 +40,15 @@ Um produto por execução.
 3. A IA Academia devolve o mesmo Modelo de Dados, com a Camada 7 preenchida — cada conclusão acompanhada de qual campo das Camadas 1-6 ela deriva.
 4. Revise se toda conclusão realmente cita um campo de origem. Se não citar, trate como falha e peça correção.
 5. Se houver conflito registrado na Camada 9, confirme que a Academia mencionou a limitação em algum campo da Camada 7 (normalmente em Pontos Fracos ou no Resumo Técnico) — nunca deve tê-lo ignorado.
-6. Salve o resultado de volta no mesmo arquivo em `BASE_DE_CONHECIMENTO/PRODUTOS/<CATEGORIA>/`, sobrescrevendo apenas a Camada 7 (e o Status da Camada 9).
-7. Atualize o Status na linha correspondente do catálogo da categoria para "Analisado pela IA Academia" (ou o status seguinte que a Academia definir).
+6. Salve o resultado de volta no mesmo arquivo em `BASE_DE_CONHECIMENTO/PRODUTOS/<CATEGORIA>/`, sobrescrevendo apenas a Camada 7. A Camada 9 não é tocada pela IA Academia — nem seu Registro de Conflitos, nem seu campo Status (esse é sobre governança editorial do arquivo, um assunto diferente).
+7. Atualize o Status na linha correspondente do catálogo da categoria (`BASE_DE_CONHECIMENTO/CATALOGOS/`) para "Analisado pela IA_Academia" — este é o único lugar onde esse status vive.
 8. Só depois disso o produto está pronto para a etapa seguinte (IA Editorial, quando existir).
 
 ---
 
 # Boas Práticas
 
-Nunca aceite uma "Melhor alternativa" que aponte para um produto de outro fabricante — isso é sinal de que a IA saiu do escopo da Versão Lite.
+Nunca aceite uma "Melhor alternativa", ou qualquer comparação quantitativa, que aponte para um produto de outro fabricante — isso é sinal de que a IA saiu do escopo da Versão Lite. Comparações com um Produto Relacionado já declarado na Camada 2 (mesma linha, mesmo fabricante, versão anterior/posterior) são esperadas desde a v1.2 e não devem ser tratadas como erro.
 
 Nunca aceite uma "Nota da Academia" apresentada como comparação com outro produto específico — a nota é sobre adequação ao contexto, não um ranking.
 

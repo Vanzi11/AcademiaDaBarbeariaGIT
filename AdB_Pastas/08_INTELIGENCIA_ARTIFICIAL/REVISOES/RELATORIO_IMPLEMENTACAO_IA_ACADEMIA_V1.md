@@ -121,4 +121,22 @@ Implementação concluída: `IA_ACADEMIA.md`, `PROMPT_IA_ACADEMIA.md`, `GUIA_DE_
 
 ---
 
+# Correção 10 (Rodada v1.1) — Conflito Entre o Status da Camada 9 e o Status do Catálogo
+
+**Origem:** uma segunda revisão externa (GPT) sobre os 6 documentos já entregues apontou uma inconsistência de redação entre "atualizar o catálogo" e "apenas sinalizar". Ao investigar essa queixa, foi encontrado um problema mais sério e mais preciso do que o próprio GPT identificou.
+
+**Problema encontrado:** `MODELO_DE_DADOS_DO_PRODUTO.md` já definia, desde antes da IA Academia existir, um campo Status na Camada 9 com enum fechado próprio: `Em revisão / Publicado / Arquivado / Necessita atualização` — um campo sobre **governança editorial do arquivo** (se o dossiê está publicado, arquivado etc.), não sobre o estágio do produto no pipeline de IAs. Separadamente, `BASE_DE_CONHECIMENTO/README.md` já definia um Status do catálogo com seu próprio enum fechado: `Em pesquisa / Completo / Aguardando revisão humana / Aguardando Academia` — este sim sobre estágio de pipeline.
+
+A v1.0 da IA Academia instruía o agente a escrever "Analisado pela IA Academia" no Status da **Camada 9** — um valor que não pertencia a nenhum dos dois enums fechados, e que misturava o conceito de um campo com a finalidade do outro.
+
+**Correção aplicada:** a IA Academia nunca mais toca a Camada 9 (nenhum campo, sem exceção — nem o Registro de Conflitos, nem o Status). Ela apenas recomenda, em texto, que o operador humano atualize o Status do **catálogo** da categoria para um novo valor adicionado ao enum já existente ali: `Analisado pela IA_Academia`. Também foi formalizada, a pedido da liderança, a convenção `IA_Nome` (com underscore, igual ao nome da subpasta do agente) para todo valor de Status futuro que nomeie um agente — por exemplo, um eventual "Publicado pela IA_Editorial".
+
+**Documentos atualizados:** `BASE_DE_CONHECIMENTO/README.md` (v1.0 → v1.1, novo valor de enum e nota de convenção), `IA_ACADEMIA.md`, `PROMPT_IA_ACADEMIA.md`, `GUIA_DE_UTILIZACAO.md`, `CASOS_DE_TESTE.md`, `LIMITACOES.md`, `RELATORIO_FINAL.md` (todos v1.0 → v1.1).
+
+**Observação:** a queixa original do GPT ("em alguns documentos aparece atualizar, em outros apenas sinalizar") não era, por si só, uma inconsistência real — a arquitetura já previa que só o operador humano edita o catálogo. O valor real da revisão dele foi levar a uma investigação mais funda, que revelou o conflito de enums acima — um problema que ele não descreveu com essa precisão, mas que sua intuição ajudou a expor.
+
+**Pendência registrada, não corrigida nesta rodada:** ausência de escala/critérios formalizados para o campo "Nota da Academia" (sugestão do GPT, validada como lacuna real). Registrada em `LIMITACOES.md` como pendência futura — recomenda-se um documento dedicado `ESCALA_DA_NOTA_DA_ACADEMIA.md` quando fizer sentido priorizá-lo.
+
+---
+
 **Fim do Documento**

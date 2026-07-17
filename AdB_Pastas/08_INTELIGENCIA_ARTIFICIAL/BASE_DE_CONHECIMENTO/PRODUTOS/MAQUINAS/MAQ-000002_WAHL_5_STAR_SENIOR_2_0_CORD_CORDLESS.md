@@ -4,7 +4,7 @@
 
 **Data da pesquisa:** 14/07/2026
 
-**Status do cadastro:** Aguardando Análise da IA Academia
+**Status do cadastro:** Analisado pela IA_Academia (16/07/2026) — este cabeçalho espelha o Status do catálogo; a Camada 9 abaixo não foi alterada por esta análise (ver Sugestões de Melhoria)
 
 ---
 
@@ -91,7 +91,33 @@ Não pesquisado nesta rodada. Além da limitação de tempo já registrada para 
 
 ## CAMADA 7 — Inteligência da Academia
 
-Não aplicável — etapa exclusiva da IA Academia.
+**Resumo Técnico:** Clipper profissional cord/cordless de lançamento recente (abril de 2026) da linha 5-Star, com motor brushless de 8.000 RPM e Adaptive Speed Control™ (ajuste automático de velocidade conforme o tipo de cabelo), alavanca de afinamento patenteada de 5 posições, e peso de 377 g validado por duas fontes convergentes. (Deriva de: Camada 1, campo Ano de lançamento; Camada 3, campos Motor, Alavanca de afinamento, Peso)
+
+**Para quem é:** Barbeiros profissionais que buscam a tecnologia mais recente da linha 5-Star — motor com ajuste automático por tipo de cabelo e autonomia de bateria consideravelmente maior que a versão anterior. (Deriva de: Camada 3, campos Motor e Autonomia; Camada 4, campo Citação Literal)
+
+**Para quem não é:** Profissionais que já usam o modelo clássico (MAQ-000001) sem necessidade declarada de ajuste automático de velocidade ou maior autonomia, ou que preferem esperar por evidências de mercado consolidadas antes de investir em um lançamento tão recente. (Deriva de: Camada 2, campo Produtos Relacionados; Camada 6)
+
+**Pontos Fortes:** Motor brushless com ajuste automático por tipo de cabelo (tecnologia ausente no modelo anterior); autonomia de bateria de até 2,5 horas, quase o triplo das 80 minutos do modelo clássico; tempo de carga mais curto (75 min vs. 120 min); alavanca de afinamento patenteada sem necessidade de ferramentas; peso validado por cruzamento de fontes, ao contrário do modelo clássico (cujo peso está em Registro de Conflitos). (Deriva de: Camada 3, campos Motor, Autonomia, Tempo de carga, Alavanca de afinamento, Peso; comparação com a Camada 3 de MAQ-000001 via Produtos Relacionados da Camada 2)
+
+**Pontos Fracos:** Garantia sem duração exata publicada para este SKU; acessórios inclusos não localizados nesta rodada de pesquisa — não há dados suficientes nas Camadas 1-6 para afirmar se o kit é equivalente ao do modelo clássico; produto muito recente, sem evidências de mercado ainda coletadas (Camada 6) para confirmar desempenho e confiabilidade a médio prazo. (Deriva de: Camada 3, campos Garantia, Acessórios inclusos; Camada 6)
+
+**Vale o investimento?:** Considerando o contexto profissional — não apenas o preço — sim, para quem já usa ou avalia a linha 5-Star e valoriza atualização tecnológica real (ajuste automático de velocidade, maior autonomia). O preço observado é mais alto que o do modelo clássico em promoção, o que é esperado para um lançamento recente sem desconto registrado ainda. (Deriva de: Camada 8, campo Preço observado, comparado ao mesmo campo de MAQ-000001)
+
+**Quando comprar:** Quando o profissional prioriza autonomia de bateria e a tecnologia de motor mais recente da linha, e não depende de um histórico de mercado longo para se sentir seguro com a compra. (Deriva de: Camada 1, campo Ano de lançamento; Camada 6)
+
+**Quando não comprar:** Quando o profissional já está satisfeito com o modelo clássico (MAQ-000001) e não tem necessidade declarada das novidades tecnológicas, ou quando exige evidências de mercado consolidadas antes de investir — ainda escassas para este lançamento recente. (Deriva de: Camada 2, campo Produtos Relacionados; Camada 6)
+
+**Melhor alternativa:** 5-Star Cord/Cordless Senior clássica (MAQ-000001), declarada pelo próprio fabricante como a versão anterior desta máquina ("Powered by Legacy"). (Deriva de: Camada 2, campo Produtos Relacionados)
+
+**Conclusão:** Uma evolução tecnológica real sobre o modelo clássico — motor com ajuste automático e autonomia de bateria muito superior — mas ainda sem histórico de mercado e com lacunas de dado (garantia exata, acessórios inclusos) que pedem cautela para quem prioriza previsibilidade de longo prazo sobre novidade tecnológica.
+
+**Nota da Academia:** Adequação alta para o contexto de um profissional que busca a tecnologia mais recente da linha 5-Star, com ganhos reais de autonomia e ajuste automático de motor — nota não comparativa com o modelo clássico (ver `LIMITACOES.md` da IA Academia sobre a ausência de escala formalizada para este campo).
+
+## Recomendação de Atualização de Status
+Recomenda-se atualizar o Status na linha correspondente do catálogo (`CATALOGO_MAQUINAS.md`) para "Analisado pela IA_Academia". A Camada 9 deste arquivo não foi alterada.
+
+## Sugestões de Melhoria à Documentação (se houver)
+Mesma observação registrada em `MAQ-000001`: o campo "Status" da Camada 9 e o cabeçalho "Status do cadastro" trazem "Aguardando Análise da IA Academia", valor que não pertence a nenhum dos dois enums fechados hoje definidos. Fora do escopo desta análise (Camada 9 não é alterada pela IA Academia) — registrado como sugestão para alinhamento futuro.
 
 ---
 
